@@ -184,7 +184,7 @@ header {
   width: 70%;
 }
 .progress-line .bootstrap {
-  width: 50%;
+  width: 25%;
 }
 .progress-line .javascript {
   width: 50%;
@@ -223,7 +223,7 @@ header {
   content: "70%";
 }
 .progress-line .bootstrap::after {
-  content: "50%";
+  content: "25%";
 }
 .progress-line .javascript::after {
   content: "50%";
