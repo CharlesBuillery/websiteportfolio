@@ -8,6 +8,8 @@ body {
   font-family: "Poppins", sans-serif;
 
 .responsive {
+  object-fit: cover;
+  border-radius: 50%;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -16,6 +18,8 @@ body {
 }
 
 .gif {
+  object-fit: cover;
+  border-radius: 50%;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
