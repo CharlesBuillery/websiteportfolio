@@ -6,30 +6,21 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+}
 
 .responsive {
-  object-fit: cover;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40%;
-  max-height: auto;
-}
+   display: grid;
+   place-items: center;
+ }
+ 
+ .responsive img {
+   width: min(30rem, 90%);
+   border-radius: 100%;
+   margin-top: 5rem;
+ }
 
-.gif {
-  object-fit: cover;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 15%;
-  max-height: auto;
-}
-
-}
 header {
-  background-color: #935529;
+  background-color:  #6f432a;
   height: 100vh;
 }
 .container {
@@ -79,10 +70,12 @@ header {
   color: #07374a;
   width: 100%;
   text-align: center;
+  margin-top: 7rem;
 }
 .home-content .name h1 {
   font-size: 2.2rem;
-  text-align: center;
+  text-align:center;
+  margin-top: 7rem;
 }
 .home-content .name p {
   color: #f0f0e6;
@@ -270,7 +263,7 @@ header {
 }
 /* ////.....Portfolio......///// */
 .portfolio {
-  background: #935529;
+  background: #6f432a;
   padding: 6rem 0;
 }
 .proj-heading h1 {
