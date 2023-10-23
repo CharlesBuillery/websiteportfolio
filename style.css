@@ -15,6 +15,9 @@ body {
  
  .responsive img {
    width: min(30rem, 90%);
+   height: auto;
+   object-fit: cover;
+   object-position: bottom;
    border-radius: 100%;
    margin-top: 5rem;
  }
