@@ -14,10 +14,9 @@ body {
  }
  
  .responsive img {
+   object-fit: cover;
    width: min(30rem, 90%);
    height: auto;
-   object-fit: cover;
-   object-position: bottom;
    border-radius: 100%;
    margin-top: 5rem;
  }
