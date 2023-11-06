@@ -15,14 +15,15 @@ body {
  
  .responsive img {
    object-fit: cover;
-   width: min(30rem, 90%);
+   width: min(30rem, 100%);
    height: auto;
    border-radius: 100%;
-   margin-top: 5rem;
+   margin-top: 20px(8rem);
+   margin: auto;
  }
 
 header {
-  background-color:  #6f432a;
+  background-color:  #25b79f;
   height: 100vh;
 }
 .container {
@@ -51,7 +52,7 @@ header {
 }
 .menu-items a {
   text-decoration: none;
-  color: #efe1ce;
+  color: #f0f0e6;
   font-size: 1.7rem;
   padding: 0.3rem;
 }
@@ -265,7 +266,7 @@ header {
 }
 /* ////.....Portfolio......///// */
 .portfolio {
-  background: #6f432a;
+  background: #25b79f;
   padding: 6rem 0;
 }
 .proj-heading h1 {

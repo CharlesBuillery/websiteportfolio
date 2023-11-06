@@ -26,6 +26,36 @@ $(document).ready(function () {
             }, 800, function () {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
+
+// Smooth scroll function
+function smoothScroll(target, duration) {
+    const targetElement = document.querySelector(target);
+    const targetPosition = targetElement.offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const startTime = performance.now();
+    
+    function scrollAnimation(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        window.scrollTo(0, startPosition + distance * progress);
+
+        if (progress < 1) {
+            requestAnimationFrame(scrollAnimation);
+        }
+    }
+
+    requestAnimationFrame(scrollAnimation);
+}
+
+// Smooth scroll when links are clicked
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = link.getAttribute('href');
+        smoothScroll(target, 1000); // 1000 milliseconds (1 second) for smooth scroll duration
+    });
+});
             });
         } // End if
     });
